@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML TABLE</title>
+<style>
+    body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    padding : 20%;
+}
+
+.table-container {
+    width: 600px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; 
+}
+
+thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    font-weight : bold;
+    border-top: 2px solid black; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Widget</td>
+                <td>$10.00</td>
+                <td>2</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Gadget</td>
+                <td>$15.50</td>
+                <td>1</td>
+                <td>$15.50</td>
+            </tr>
+            <tr>
+                <td>Thingamajig</td>
+                <td>$5.25</td>
+                <td>4</td>
+                <td>$21.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>$56.50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
