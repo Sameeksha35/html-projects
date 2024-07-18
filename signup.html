@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup page</title>
+        <link rel = "stylesheet" href = "css/stylesignup.css">
+
+    </head>
+    <body>
+        <div class = "container">
+            <h2>Sign Up</h2>
+            <form class = "form-elements">
+                <label for = "fname">First Name : </label><br>
+                <input type = "text" id = "fname"><br><br>
+                <label for = "lname">Last Name : </label><br>
+                <input type = "text" id = "lname"><br><br>
+                <label for = "email">Email : </label><br>
+                <input type = "email" id = "email"><br><br>
+                <label for = "phoneno">Phone number : </label><br>
+                <input type = "tel" id = "phoneno" pattern = [0-9]{5}-[0-9]{5}><br><br>
+                <label for = "address">Address : </label><br>
+                <textarea id = "address" rows = "5" cols = "49"></textarea><br><br>
+                <label for = "Password">Password : </label><br>
+                <input type = "password" id = "password"><br><br>
+                <label for = "cpass">Confirm Password : </label><br>
+                <input type = "cpass" id = "cpass"><br><br>
+                <input type = "submit" value = "Sign Up">
+            </form>
+        </div>
+
+    </body>
+</html>
