@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup page</title>
+        <link rel = "stylesheet" href = "css/stylesignup.css">
+        <script src = "script/signup.js"></script>
+
+    </head>
+    <body>
+        <div class = "container" style="height: 1300px; width: 600px;" >
+            <h2 style="margin-top:15px;"><u>Sign Up</u></h2>
+            <form action="loginpage.html" onsubmit = "return validate()" class = "form-elements">
+                <label for = "fname">First Name : </label><br>
+                <input type = "text" id = "fname">
+                <p id = "fn"></p>
+                <label for = "lname">Last Name : </label><br>
+                <input type = "text" id = "lname">
+                <p id = "ln"></p>
+                <label for = "email">Email : </label><br>
+                <input type = "email" id = "email">
+                <p id = "eml"></p>
+                <label for = "phoneno">Phone number : </label><br>
+                <input type = "tel" id = "phoneno">
+                <!-- placeholder = "34344-34333" pattern = [0-9]{5}-[0-9]{5} -->
+                <p id = "pn"></p>
+                <label for = "address">Address : </label><br>
+                <textarea id = "address" rows = "5" cols = "49"></textarea>
+                <p id = "add"></p>
+                
+                <div class="radio-set" style="margin-left: 1px;">
+                    <label for="gender" >Gender : </label><br><br>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="female" style = "width:366px">Female</label>
+                    <input type="radio" id="female" style = "width:367px" name="gender">
+                </div>
+                <p id = "radiob"></p>
+                <br>
+                <div class="check-box">
+                    <label for="language">Language Known : </label><br><br>
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="hindi" style="margin-left: 0px;" name="hindi"><br>
+                    <label for="english">English</label>
+                    <input type="checkbox" id="english" style="margin-left: -15px;"name="english"><br>
+                    <label for="french">French</label>
+                    <input type="checkbox" id="french" style="margin-left: -13px;" name="french">
+                  </div>
+                  <p id = "checkb"></p>
+                <br>
+
+                <label for = "Password">Password : </label><br>
+                <div class = "eye-icon">
+                    <input type = "password" id = "password">
+                    <img src = "images/pass-hide.jpg" onclick = "togglePasswordVisibility()" class = "eye" id = "eyeicon">
+                </div>
+                <p id = "pass"></p>
+                <label for = "cpass">Confirm Password : </label><br>
+                <input type = "password" id = "cpass" name = "cpass">
+                <p id = "cp" ></p>
+                <input type = "submit" value = "Sign Up">
+            </form>
+        </div>
+
+    </body>
+</html>
